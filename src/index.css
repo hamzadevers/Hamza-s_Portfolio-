@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+::selection {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #18181b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #a1a1aa 50%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-glow {
+  box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.3);
+}
